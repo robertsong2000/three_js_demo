@@ -9,6 +9,7 @@ three_js_demo/
 ├── cube.html              # 🌌 3D太阳系演示
 ├── particle_wave.html     # 🌊 交互式粒子波浪
 ├── morphing_geometry.html  # 🔄 几何变形演示
+├── audio_visualizer.html  # 🎵 3D音频可视化器
 └── README.md              # 📖 项目文档
 ```
 
@@ -88,6 +89,35 @@ three_js_demo/
 - 🍩 **圆环**: 甜甜圈形状
 - 💎 **八面体**: 钻石形几何
 
+### 4. 🎵 3D音频可视化器 (`audio_visualizer.html`)
+
+一个实时的3D音频频谱可视化器，支持多种音频源和可视化模式。
+
+#### ✨ 功能特性
+- **多音频源**: 文件上传、麦克风输入
+- **可视化模式**: 频谱柱状图、波形图、球形频谱、环形频谱
+- **实时分析**: Web Audio API频谱分析
+- **交互控制**: 灵敏度调节、平滑度控制
+- **颜色主题**: 多种动态颜色方案
+
+#### 🎮 操作方式
+| 操作 | 功能 |
+|------|------|
+| 选择文件 | 加载音频文件 |
+| 麦克风按钮 | 使用麦克风输入 |
+| 模式按钮 | 切换可视化模式 |
+| 鼠标拖拽 | 旋转视角 |
+| 滚轮 | 缩放 |
+| 1-4键 | 快速切换模式 |
+| C键 | 切换颜色主题 |
+| F键 | 全屏模式 |
+
+#### 🎨 可视化模式
+1. **频谱柱状图**: 经典的频率柱状显示
+2. **波形图**: 音频波形的3D线条
+3. **球形频谱**: 球面分布的频谱点
+4. **环形频谱**: 多层环形频谱显示
+
 ## 🚀 快速开始
 
 ### 环境要求
@@ -103,6 +133,7 @@ three_js_demo/
    open cube.html
    open particle_wave.html
    open morphing_geometry.html
+   open audio_visualizer.html
    ```
 
 2. **本地服务器** (推荐)
@@ -115,6 +146,7 @@ three_js_demo/
    # http://localhost:8000/cube.html
    # http://localhost:8000/particle_wave.html
    # http://localhost:8000/morphing_geometry.html
+   # http://localhost:8000/audio_visualizer.html
    ```
 
 3. **Live Server** (VS Code用户)
@@ -149,6 +181,12 @@ three_js_demo/
 - 动态几何更新
 - 材质动画系统
 - 缓动函数应用
+
+#### 4. 音频可视化器
+- Web Audio API集成
+- 实时频谱分析
+- 多种可视化算法
+- 动态颜色映射
 
 ## 🎨 自定义扩展
 
