@@ -10,6 +10,7 @@ three_js_demo/
 ├── particle_wave.html     # 🌊 交互式粒子波浪
 ├── morphing_geometry.html  # 🔄 几何变形演示
 ├── audio_visualizer.html  # 🎵 3D音频可视化器
+├── car_simulator.html     # 🚗 3D小车驾驶模拟器
 └── README.md              # 📖 项目文档
 ```
 
@@ -118,6 +119,32 @@ three_js_demo/
 3. **球形频谱**: 球面分布的频谱点
 4. **环形频谱**: 多层环形频谱显示
 
+### 5. 🚗 3D小车驾驶模拟器 (`car_simulator.html`)
+
+一个完整的3D小车驾驶模拟器，提供真实的驾驶体验和丰富的交互功能。
+
+#### ✨ 功能特性
+- **真实车辆物理**: 加速、刹车、转向、手刹等完整的驾驶物理模拟
+- **多种视角模式**: 第三人称、第一人称、俯视角、自由视角
+- **完整的3D环境**: 道路、建筑、树木、路灯、交通标志
+- **车辆定制**: 多种车身颜色、引擎功率调节
+- **环境效果**: 白天/夜晚切换、晴天/雨天天气系统
+- **车灯系统**: 前大灯、尾灯、夜间自动照明
+- **实时UI**: 速度表、位置显示、转向角度、FPS监控
+
+#### 🎮 操作方式
+| 操作 | 功能 |
+|------|------|
+| W/↑ | 前进加速 |
+| S/↓ | 后退刹车 |
+| A/← | 左转 |
+| D/→ | 右转 |
+| 空格 | 手刹 |
+| R键 | 重置位置 |
+| C键 | 切换视角 |
+| H键 | 鸣笛 |
+| L键 | 车灯开关 |
+
 ## 🚀 快速开始
 
 ### 环境要求
@@ -134,6 +161,7 @@ three_js_demo/
    open particle_wave.html
    open morphing_geometry.html
    open audio_visualizer.html
+   open car_simulator.html
    ```
 
 2. **本地服务器** (推荐)
@@ -147,6 +175,7 @@ three_js_demo/
    # http://localhost:8000/particle_wave.html
    # http://localhost:8000/morphing_geometry.html
    # http://localhost:8000/audio_visualizer.html
+   # http://localhost:8000/car_simulator.html
    ```
 
 3. **Live Server** (VS Code用户)
@@ -182,11 +211,13 @@ three_js_demo/
 - 材质动画系统
 - 缓动函数应用
 
-#### 4. 音频可视化器
-- Web Audio API集成
-- 实时频谱分析
-- 多种可视化算法
-- 动态颜色映射
+#### 5. 🚗 小车驾驶模拟器
+- **车辆物理引擎**：真实的加速、刹车、转向物理模拟
+- **多视角系统**：第三人称、第一人称、俯视角、自由视角切换
+- **环境渲染**：完整的3D城市环境，包含道路、建筑、植被
+- **天气系统**：白天/夜晚循环，晴天/雨天天气效果
+- **车辆系统**：车灯照明、车身定制、引擎参数调节
+- **碰撞检测**：边界检测和物理约束系统
 
 ## 🎨 自定义扩展
 
