@@ -1,35 +1,92 @@
-# 🌌 Three.js 3D Solar System Demo
+# 🌌 Three.js 演示项目集合
 
-一个使用 Three.js 构建的交互式3D太阳系模拟器，展示了现代Web 3D图形技术的强大功能。
+一个包含多个Three.js演示的项目集合，展示了现代Web 3D图形技术的强大功能和多样性。
 
-## ✨ 功能特性
+## 📁 项目结构
 
-### 🪐 天体系统
-- **太阳**: 发光的中心恒星，带有自转动画
-- **地球**: 蓝色行星，围绕太阳公转并自转
-- **月球**: 地球的卫星，围绕地球公转
-- **火星**: 红色行星，独立的轨道运行
-- **木星**: 最大的气态巨行星
+```
+three_js_demo/
+├── cube.html              # 🌌 3D太阳系演示
+├── particle_wave.html     # 🌊 交互式粒子波浪
+├── morphing_geometry.html  # 🔄 几何变形演示
+└── README.md              # 📖 项目文档
+```
 
-### 🎮 交互控制
-- **鼠标拖拽**: 360度旋转视角观察
-- **滚轮缩放**: 自由缩放视距 (10-100单位)
-- **空格键**: 暂停/继续动画播放
-- **响应式设计**: 自适应不同屏幕尺寸
+## 🎯 演示项目
 
-### 🎨 视觉效果
-- **实时光照**: 太阳作为点光源照亮行星
-- **阴影系统**: 真实的阴影投射效果
-- **星空背景**: 10,000个随机分布的星点
-- **轨道线**: 半透明的行星轨道指示线
-- **材质效果**: Phong光照模型，支持高光和反射
-- **渐变背景**: 深空主题的CSS渐变背景
+### 1. 🌌 3D太阳系演示 (`cube.html`)
 
-### 🔧 技术特性
-- **模块化代码**: 清晰的函数分离和组织
-- **性能优化**: 高效的渲染循环和事件处理
-- **跨浏览器兼容**: 支持现代浏览器的WebGL
-- **无外部依赖**: 仅依赖Three.js CDN
+一个完整的太阳系模拟器，展示天体运动和光照效果。
+
+#### ✨ 功能特性
+- **天体系统**: 太阳、地球、月球、火星、木星
+- **真实物理**: 公转、自转、轨道运动
+- **视觉效果**: 实时光照、阴影、星空背景
+- **交互控制**: 鼠标拖拽、滚轮缩放、空格暂停
+
+#### 🎮 操作方式
+| 操作 | 功能 |
+|------|------|
+| 鼠标拖拽 | 旋转视角 |
+| 滚轮 | 缩放视距 |
+| 空格键 | 暂停/继续 |
+
+### 2. 🌊 交互式粒子波浪 (`particle_wave.html`)
+
+一个高性能的粒子系统演示，展示多种视觉效果模式。
+
+#### ✨ 功能特性
+- **粒子系统**: 10,000个动态粒子
+- **多种模式**: 波浪、螺旋、爆炸、漩涡、脉冲
+- **实时交互**: 鼠标控制波浪形态
+- **性能监控**: FPS显示、实时统计
+- **自定义着色器**: GLSL顶点和片段着色器
+
+#### 🎮 操作方式
+| 操作 | 功能 |
+|------|------|
+| 鼠标移动 | 控制波浪 |
+| 滚轮 | 调整视角 |
+| 1-5键 | 切换效果模式 |
+| 空格键 | 暂停/继续 |
+| R键 | 重置波浪 |
+
+#### 🎨 效果模式
+1. **波浪模式**: 经典的正弦波效果
+2. **螺旋模式**: 螺旋上升的粒子流
+3. **爆炸模式**: 径向爆炸效果
+4. **漩涡模式**: 旋转漩涡动画
+5. **脉冲模式**: 节拍式脉冲效果
+
+### 3. 🔄 几何变形演示 (`morphing_geometry.html`)
+
+展示3D几何体之间的平滑变形动画和材质效果。
+
+#### ✨ 功能特性
+- **几何变形**: 球体、立方体、圆柱体、圆环、八面体
+- **平滑过渡**: 顶点插值动画
+- **动态材质**: 颜色变化、脉冲效果
+- **多种模式**: 颜色模式、线框模式、光照切换
+- **实时信息**: 顶点数、面数、变形进度
+
+#### 🎮 操作方式
+| 操作 | 功能 |
+|------|------|
+| 点击按钮 | 切换几何形状 |
+| 鼠标拖拽 | 旋转视角 |
+| 滚轮 | 缩放 |
+| 空格键 | 暂停动画 |
+| C键 | 切换颜色模式 |
+| W键 | 切换线框模式 |
+| L键 | 切换光照 |
+| ↑↓键 | 调整动画速度 |
+
+#### 🎨 几何形状
+- 🔮 **球体**: 经典的球形几何
+- 📦 **立方体**: 分段立方体
+- 🥫 **圆柱体**: 圆柱形几何
+- 🍩 **圆环**: 甜甜圈形状
+- 💎 **八面体**: 钻石形几何
 
 ## 🚀 快速开始
 
@@ -42,8 +99,10 @@
 
 1. **直接打开**
    ```bash
-   # 在浏览器中直接打开
+   # 在浏览器中直接打开任意HTML文件
    open cube.html
+   open particle_wave.html
+   open morphing_geometry.html
    ```
 
 2. **本地服务器** (推荐)
@@ -52,107 +111,73 @@
    python -m http.server 8000
    # 或使用Node.js
    npx serve .
-   # 然后访问 http://localhost:8000
+   # 然后访问对应的HTML文件
+   # http://localhost:8000/cube.html
+   # http://localhost:8000/particle_wave.html
+   # http://localhost:8000/morphing_geometry.html
    ```
 
 3. **Live Server** (VS Code用户)
    - 安装Live Server扩展
-   - 右键点击cube.html选择"Open with Live Server"
-
-## 🎯 使用指南
-
-### 基本操作
-| 操作 | 功能 |
-|------|------|
-| 鼠标拖拽 | 旋转视角 |
-| 滚轮 | 缩放视距 |
-| 空格键 | 暂停/继续 |
-
-### 观察技巧
-- **近距离观察**: 滚轮向前滚动，靠近观察行星细节
-- **全景视图**: 滚轮向后滚动，查看整个太阳系
-- **动态追踪**: 拖拽鼠标跟随行星运动轨迹
-- **静态分析**: 按空格键暂停，仔细观察天体位置关系
+   - 右键点击HTML文件选择"Open with Live Server"
 
 ## 🛠️ 技术架构
 
 ### 核心技术栈
 - **Three.js 0.160.0**: 3D图形渲染引擎
 - **WebGL**: 底层图形API
+- **GLSL**: 自定义着色器语言
 - **HTML5 Canvas**: 渲染表面
 - **ES6+ JavaScript**: 现代JavaScript特性
 
-### 代码结构
-```
-cube.html
-├── HTML结构
-│   ├── 容器元素
-│   ├── 信息面板
-│   └── 控制说明
-├── CSS样式
-│   ├── 响应式布局
-│   ├── 渐变背景
-│   └── UI组件样式
-└── JavaScript逻辑
-    ├── 场景初始化
-    ├── 几何体创建
-    ├── 材质和光照
-    ├── 动画控制
-    └── 事件处理
-```
+### 技术特色
 
-### 关键组件
+#### 1. 太阳系演示
+- 层级化场景管理
+- 物理光照模型
+- 阴影映射技术
+- 粒子系统背景
 
-#### 1. 场景管理
-```javascript
-// 场景、相机、渲染器的初始化
-scene = new THREE.Scene();
-camera = new THREE.PerspectiveCamera(75, aspect, 0.1, 1000);
-renderer = new THREE.WebGLRenderer({ antialias: true });
-```
+#### 2. 粒子波浪
+- 自定义GLSL着色器
+- 高性能粒子渲染
+- 实时uniform传递
+- 加法混合模式
 
-#### 2. 光照系统
-```javascript
-// 环境光 + 点光源组合
-const ambientLight = new THREE.AmbientLight(0x404040, 0.3);
-const sunLight = new THREE.PointLight(0xffffff, 2, 100);
-```
-
-#### 3. 轨道系统
-```javascript
-// 使用Group实现层级化的轨道运动
-earthOrbit = new THREE.Group();  // 地球轨道
-moonOrbit = new THREE.Group();   // 月球轨道
-```
+#### 3. 几何变形
+- 顶点插值算法
+- 动态几何更新
+- 材质动画系统
+- 缓动函数应用
 
 ## 🎨 自定义扩展
 
-### 添加新行星
+### 添加新的粒子效果
 ```javascript
-// 创建新行星的基本模板
-const newPlanetOrbit = new THREE.Group();
-const newPlanetGeometry = new THREE.SphereGeometry(radius, 32, 32);
-const newPlanetMaterial = new THREE.MeshPhongMaterial({
-    color: 0xcolor,
-    emissive: 0xemissive
-});
-const newPlanet = new THREE.Mesh(newPlanetGeometry, newPlanetMaterial);
+// 在particle_wave.html中添加新模式
+if (mode == 6.0) {
+    // 自定义效果
+    pos.y = sin(distance * 0.05 + time) * 25.0;
+}
 ```
 
-### 修改动画速度
+### 创建新的几何形状
 ```javascript
-// 在animate()函数中调整旋转速度
-earthOrbit.rotation.y += 0.01;  // 公转速度
-earth.rotation.y += 0.02;       // 自转速度
+// 在morphing_geometry.html中添加新形状
+const geometries = {
+    // 现有形状...
+    pyramid: () => new THREE.ConeGeometry(15, 25, 4)
+};
 ```
 
-### 添加纹理贴图
+### 修改材质效果
 ```javascript
-// 使用TextureLoader加载行星纹理
-const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load('path/to/earth-texture.jpg');
-const earthMaterial = new THREE.MeshPhongMaterial({
-    map: earthTexture
+// 自定义材质属性
+const material = new THREE.MeshPhongMaterial({
+    color: 0xff6b6b,
+    shininess: 100,
+    transparent: true,
+    opacity: 0.9
 });
 ```
 
@@ -162,42 +187,64 @@ const earthMaterial = new THREE.MeshPhongMaterial({
 - 使用`requestAnimationFrame`确保流畅动画
 - 启用抗锯齿提升视觉质量
 - 合理设置阴影贴图分辨率
+- 使用加法混合减少overdraw
 
 ### 内存管理
 - 复用几何体和材质
-- 适当的LOD (Level of Detail) 控制
-- 及时清理不需要的对象
+- 及时更新缓冲区属性
+- 适当的LOD控制
+- 清理不需要的对象
+
+### 着色器优化
+- 减少片段着色器计算
+- 使用uniform传递常量
+- 避免条件分支
+- 优化纹理采样
 
 ## 🐛 常见问题
 
 ### Q: 页面显示黑屏
-**A**: 检查浏览器是否支持WebGL，或尝试更新显卡驱动
+**A**: 检查浏览器WebGL支持，更新显卡驱动
 
-### Q: 动画卡顿
-**A**: 降低星空粒子数量或关闭阴影效果
+### Q: 粒子效果卡顿
+**A**: 降低粒子数量或简化着色器计算
+
+### Q: 几何变形不平滑
+**A**: 确保源和目标几何体顶点数匹配
 
 ### Q: 鼠标控制不响应
-**A**: 确保页面完全加载，检查JavaScript控制台是否有错误
-
-### Q: CDN加载失败
-**A**: 检查网络连接，或下载Three.js到本地引用
+**A**: 检查JavaScript控制台错误，确保页面完全加载
 
 ## 🔮 未来扩展
 
 ### 计划功能
-- [ ] 添加更多行星和卫星
-- [ ] 实现真实的行星纹理贴图
-- [ ] 添加彗星和小行星带
+- [ ] 添加更多粒子效果模式
+- [ ] 实现几何体纹理贴图
+- [ ] 添加音频可视化
 - [ ] 支持VR/AR模式
-- [ ] 添加行星信息面板
-- [ ] 实现时间控制器
-- [ ] 添加音效和背景音乐
+- [ ] 添加物理引擎集成
+- [ ] 实现实时阴影
+- [ ] 添加后处理效果
 
 ### 技术改进
 - [ ] 使用Web Workers优化计算
-- [ ] 实现实例化渲染优化性能
-- [ ] 添加后处理效果
+- [ ] 实现实例化渲染
+- [ ] 添加GPU粒子系统
 - [ ] 支持移动端触摸控制
+- [ ] 优化内存使用
+- [ ] 添加性能分析工具
+
+## 📚 学习资源
+
+### Three.js官方资源
+- [Three.js官方文档](https://threejs.org/docs/)
+- [Three.js示例](https://threejs.org/examples/)
+- [Three.js编辑器](https://threejs.org/editor/)
+
+### WebGL学习
+- [WebGL基础教程](https://webglfundamentals.org/)
+- [GLSL着色器教程](https://thebookofshaders.com/)
+- [GPU Gems系列](https://developer.nvidia.com/gpugems/gpugems/contributors)
 
 ## 📄 许可证
 
@@ -222,4 +269,4 @@ const earthMaterial = new THREE.MeshPhongMaterial({
 
 ---
 
-**享受探索宇宙的乐趣！** 🚀✨
+**探索3D图形的无限可能！** 🚀✨🎨
